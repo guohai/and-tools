@@ -1,0 +1,32 @@
+Useful Tools for Android Development
+
+
+for Memory Statistics
+you can log on to Android shell with adb shell, and then execute these commands.
+
+1. procrank
+
+2. cat /proc/meminfo
+
+3. procmem pid
+the result from this cmd is not exactly, so do not use it.
+may be you can get the source code to fix it.
+
+
+
+
+
+for Pressure Test
+1. monkey
+adb shell
+monkey -p com.dropbox.android -v 500
+
+
+
+
+for Service Management
+
+1. service
+adb shell
+service list
+
