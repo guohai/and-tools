@@ -30,3 +30,10 @@ for Service Management
 adb shell
 service list
 
+
+for Run Native Code on Android
+
+1. agcc
+you should modify the shell script to fit your real environment.
+such as the value of OS or ANDROIDSDK variables, you should check the script, it is very clear.
+

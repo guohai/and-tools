@@ -1,0 +1,19 @@
+#!/bin/sh
+
+OS='linux'
+ANDROIDSDK='android-14'
+
+PROGDIR='/home/guohai/dev/android-ndk-r7/'
+
+PROGDIR=`cd $PROGDIR && pwd`
+ARMEABIGCC=$PROGDIR/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-gcc
+ARMEABILIB=$PROGDIR/platforms/$ANDROIDSDK/arch-arm/usr/lib
+ARMEABIINC=$PROGDIR/platforms/$ANDROIDSDK/arch-arm/usr/include
+ARMEABICRT=$PROGDIR/platforms/$ANDROIDSDK/arch-arm/usr/lib/crtbegin_dynamic.o
+
+LINKER=/system/bin/linker
+
+echo "GCC:"$ARMEABIGCC "LIB:"$ARMEABILIB "LINKER":$LINKER "PARAMS:"$@
+
+$ARMEABIGCC $@ -Wl,-rpath-link=$ARMEABILIB,-dynamic-linker=$LINKER -L$ARMEABILIB $ARMEABICRT -I$ARMEABIINC -nostdlib -lc
+
