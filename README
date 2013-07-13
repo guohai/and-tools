@@ -37,3 +37,19 @@ for Run Native Code on Android
 you should modify the shell script to fit your real environment.
 such as the value of OS or ANDROIDSDK variables, you should check the script, it is very clear.
 
+2. make_cscope_indices
+usage:
+
+append 'make_cscope_indices' to your environment variable PATH, so you can access it anywhere.
+
+head to your source folder, just using cd command
+
+type "make_cscope_indices" in command line, and then hit the enter key
+
+if you want to force removing existing indices and then generate them again, just append an argument "f"
+
+strip the double quotation marks when you execute the command
+
+your_host_where_want_to_generate_indices$make_cscope_indices
+your_host_where_want_to_generate_indices$make_cscope_indices f
+

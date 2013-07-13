@@ -1,0 +1,43 @@
+#!/bin/bash
+
+force__clean=$1
+
+exe__path=`pwd`
+
+echo you are now at \"$exe__path\"!
+
+# clean existing incices
+if [ "$force__clean" = "f" ]
+then
+
+echo trying to DELETE indices!
+
+rm cscope.*
+
+echo indices successfully DELETED!
+
+fi
+
+
+# generate the indices
+if [ ! -e cscope.out ]
+then
+
+find $exe__path -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.hpp" > cscope.files
+
+cscope -q -R -b -i cscope.files
+
+echo indices under \"$exe__path\" successfully generated!
+
+fi
+
+# export but need 'source' command
+#export CSCOPE_DB=$exe__path/cscope.out
+
+echo "------------------------------------------"
+
+echo "plz export CSCOPE_DB manually if you need!"
+echo "export CSCOPE_DB=$exe__path/cscope.out"
+
+echo "------------------------------------------"
+
