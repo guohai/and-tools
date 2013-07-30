@@ -1,0 +1,2 @@
+#!/bin/sh
+[ $# -eq 7 ] && /home/guohai/apps/bin/extMerge "$2" "$5"

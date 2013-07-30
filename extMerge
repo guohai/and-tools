@@ -1,0 +1,2 @@
+#!/bin/sh
+/home/guohai/apps/nimble/p4v-2011.1.428988/bin/p4merge $*

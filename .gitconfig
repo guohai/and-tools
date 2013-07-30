@@ -1,0 +1,18 @@
+[user]
+	name = Hai Guo
+	email = deliberatekids@gmail.com
+[color]
+	ui = auto
+[diff]
+    tool = vimdiff
+    external = extDiff
+[merge]
+	tool = extMerge
+[mergetool "extMerge"]
+	cmd = extMerge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[mergetool]
+	trustExitCode = false
+[commit]
+	template = /home/guohai/git-commit-template
+[core]
+	editor = vim
