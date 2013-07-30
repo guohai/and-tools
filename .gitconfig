@@ -3,12 +3,17 @@
 	email = deliberatekids@gmail.com
 [color]
 	ui = auto
+[alias]
+	dt = difftool
 [diff]
-    tool = vimdiff
-    external = extDiff
+	tool = myDiff
+[difftool "myDiff"]
+	cmd = extMerge \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
 [merge]
-	tool = extMerge
-[mergetool "extMerge"]
+	tool = myMerge
+[mergetool "myMerge"]
 	cmd = extMerge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 [mergetool]
 	trustExitCode = false
