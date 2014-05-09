@@ -1,12 +1,12 @@
 #!/bin/sh
 
-OS='linux'
+OS='darwin'
 ANDROIDSDK='android-14'
 
-PROGDIR='/home/guohai/dev/android-ndk-r7/'
+PROGDIR='/Users/guohai/Dev/android-ndk-r7c/'
 
 PROGDIR=`cd $PROGDIR && pwd`
-ARMEABIGCC=$PROGDIR/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-gcc
+ARMEABIGCC=$PROGDIR/toolchains/arm-linux-androideabi-4.4.3/prebuilt/$OS-x86/bin/arm-linux-androideabi-gcc
 ARMEABILIB=$PROGDIR/platforms/$ANDROIDSDK/arch-arm/usr/lib
 ARMEABIINC=$PROGDIR/platforms/$ANDROIDSDK/arch-arm/usr/include
 ARMEABICRT=$PROGDIR/platforms/$ANDROIDSDK/arch-arm/usr/lib/crtbegin_dynamic.o
