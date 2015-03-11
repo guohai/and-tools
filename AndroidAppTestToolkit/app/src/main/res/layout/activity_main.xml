@@ -19,4 +19,10 @@
         android:layout_height="wrap_content"
         android:onClick="onCleanContacts" />
 
+    <Button
+        android:text="@string/eat_system_memory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onEatSystemMemory" />
+
 </LinearLayout>

@@ -9,4 +9,6 @@
 
     <string name="contacts_clean">Clean contacts</string>
 
+    <string name="eat_system_memory">Eat system memory</string>
+
 </resources>
