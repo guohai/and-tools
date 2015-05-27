@@ -7,6 +7,8 @@
 
     <string name="contacts_fill_up">Full up 5000 contacts</string>
 
+    <string name="contacts_fill_bk_users">Full 140 Beckon contacts</string>
+
     <string name="contacts_clean">Clean contacts</string>
 
     <string name="eat_system_memory">Eat system memory</string>

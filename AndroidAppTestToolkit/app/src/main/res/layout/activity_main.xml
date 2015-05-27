@@ -14,6 +14,12 @@
         android:onClick="onFillupContacts" />
 
     <Button
+        android:text="@string/contacts_fill_bk_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onFillBKContacts" />
+
+    <Button
         android:text="@string/contacts_clean"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
